@@ -1,5 +1,5 @@
 class Notifier < ActionMailer::Base
-  default :from => 'Via Site <depot@example.com>'
+  default :from => 'Sam Ruby <depot@example.com>'
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
@@ -9,7 +9,7 @@ class Notifier < ActionMailer::Base
   def order_received(order)
     @order = order
 
-    mail :to => 'ernane@talentodesign.com.br', :subject => 'Pragmatic Store Order Confirmation'
+    mail :to => order.email, :subject => 'Pragmatic Store Order Confirmation' 
   end
 
   # Subject can be set in your I18n file at config/locales/en.yml

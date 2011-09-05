@@ -21,19 +21,7 @@ Depot::Application.configure do
   config.active_support.deprecation = :log
 
   # Only use best-standards-support built into browsers
-  config.action_dispatch.best_standards_support = :builtin
-
-  
-
-  config.action_mailer.delivery_method = :smtp
-    config.action_mailer.smtp_settings = {
-        :address              => "smtp.gmail.com",
-        :port                 => 587,
-        :domain               => 'talentodesign.com.br',
-        :user_name            => 'ernane.sena@gmail.com',
-        :password             => 'desenvolvedorzf',
-        :authentication       => 'plain',
-        :enable_starttls_auto => true  }
+  config.action_dispatch.best_standards_support = :builtin 
    
 end
 
