@@ -1,0 +1,69 @@
+#encoding: utf-8
+
+pt-Br:
+
+  number:
+    currency:
+      format:
+        unit:      "R$"
+        precision: 2
+        separator: ","
+        delimiter: "."
+        format:    "%u%n"
+
+  activerecord:
+
+    models:
+      order:       "pedido"
+    attributes:
+      order:
+        address:   "Endereço"
+        name:      "Nome"
+        email:     "E-mail"
+        pay_type:  "Forma de Pagamento"
+
+
+    errors:
+      messages:
+        inclusion: "não está incluído na lista"
+        blank:     "não pode ser em branco"
+
+  errors:
+    template:
+      body:        "Há problemas com os seguintes campos:"
+      header:
+        one:       "1 erro impede que este %{model} seja salvo"
+        other:     "%{count} erros estão impedindo que este %{model} seja salvo"
+
+  layouts:
+    application:
+      title:       "Publicaciones de Pragmatic"
+      home:        "Inicio"
+      questions:   "Perguntas"
+      news:        "Notícias"
+      contact:     "Contato"
+
+  carts:
+    cart:
+      title:       "Carrinho de Compras"
+      empty:       "Esvaziar Carrrinho"
+      checkout:    "Comprar"
+
+  store:
+    index:
+      title_html:  "Su Cat&aacute;logo de Pragmatic"
+      add:         "Add Carrinho"
+
+  orders:
+    new:
+      legend:       "Por favor, informe seus dados"
+    form:
+      name:         "Nome"
+      address:      "Endereço"
+      email:        "E-mail"
+      pay_type:     "Pagar com"
+      pay_prompt:   "Selecione um método de pagamento"
+      submit:       "Realizar Pedido"
+
+  thanks:          "Obrigado pelo seu pedido"
+

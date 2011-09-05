@@ -135,8 +135,8 @@
 }
 
 #store .entry p {
- margin-top: 0.5em; 
- margin-bottom: 0.8em; 
+ margin-top: 0.5em;
+ margin-bottom: 0.8em;
 }
 
 #store .entry .price_line {
@@ -227,3 +227,11 @@
   margin: 0.5em 0;
 }
 /* END:form */
+
+/* START:i18n */
+.locale {
+  float: right;
+  margin: -0.25em 0.1em;
+}
+/* END:i18n */
+
